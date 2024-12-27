@@ -5,7 +5,8 @@ export default function HomeScreen() {
   return (
     <View>
       <Text>Home</Text>
-      <Link href={"/workout/current"}>Link</Link>
+      <Link href={"/workout/current"}>Current workout</Link>
+      <Link href={"/workout/123"}>Workout details</Link>
     </View>
   );
 }
