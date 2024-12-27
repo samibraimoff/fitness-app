@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { View, Text } from "@/components/generic/themed";
 
 export default function CurrentWorkout() {
   return (
