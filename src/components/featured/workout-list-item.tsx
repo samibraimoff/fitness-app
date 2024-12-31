@@ -30,10 +30,12 @@ export function WorkoutListItem({ workout }: WorkoutListItemProps) {
             <Text style={{ color: "darkgrey" }}>
               {`${exercise.sets.length} x ${exercise.name}`}
             </Text>
-            <Text style={{ color: "darkgrey" }}>
-              {bestSet?.reps}{" "}
-              {bestSet?.weight ? `x ${bestSet?.weight} kg` : "reps"}
-            </Text>
+            {bestSet && (
+              <Text style={{ color: "darkgrey" }}>
+                {bestSet.reps}{" "}
+                {bestSet.weight ? `x ${bestSet.weight} kg` : "reps"}
+              </Text>
+            )}
           </View>
         );
       })}
