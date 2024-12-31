@@ -1,11 +1,9 @@
-import { View, Text } from "@/components/generic/themed-components";
+import { View } from "@/components/generic/themed-components";
 import { Button } from "@/components/featured/button";
 import { WorkoutListItem } from "@/components/featured/workout-list-item";
 import { Link } from "expo-router";
 import { StyleSheet, FlatList } from "react-native";
 import workouts from "@/data/dummy-data";
-
-const workout = workouts[0];
 
 export default function HomeScreen() {
   return (
