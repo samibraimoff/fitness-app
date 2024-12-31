@@ -1,4 +1,4 @@
-import { ExerciseWithSets, WorkoutWithExercises } from "@/types";
+import { ExerciseWithSets } from "@/types";
 import { View, Text } from "@/components/generic/themed-components";
 import { Card } from "@/components/featured/card";
 import { StyleSheet } from "react-native";
