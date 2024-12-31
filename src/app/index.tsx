@@ -1,4 +1,4 @@
-import { View, Text } from "@/components/generic/themed-components";
+import { View } from "@/components/generic/themed-components";
 import { Link } from "expo-router";
 
 export default function HomeScreen() {
