@@ -1,10 +1,10 @@
+import dayjs from "dayjs";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import { StyleSheet } from "react-native";
 import { Text, View } from "@/components/generic/themed-components";
 import { Card } from "@/components/featured/card";
-import { StyleSheet } from "react-native";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { WorkoutWithExercises } from "@/types";
-import dayjs from "dayjs";
-import { calculateDuration } from "@/utils/calculateDuration";
+import { calculateDuration } from "@/utils/time";
 import { getBestSet } from "@/services/set-service";
 import { getWorkoutTotalWeight } from "@/services/workout-service";
 
@@ -57,7 +57,7 @@ export function WorkoutListItem({ workout }: WorkoutListItemProps) {
             size={16}
             color="gray"
           />
-          {getWorkoutTotalWeight(workout)} kg
+          {`${getWorkoutTotalWeight(workout)} kg`}
         </Text>
       </View>
     </Card>

@@ -2,7 +2,7 @@ import { Text, View } from "@/components/generic/themed-components";
 import { useLocalSearchParams } from "expo-router";
 import { FlatList, StyleSheet } from "react-native";
 import workouts from "@/data/dummy-data";
-import { WorkoutExerciseItem } from "@/components/featured/workout-exercise-item";
+import { WorkoutExerciseItem } from "@/components/featured/workouts/workout-exercise-item";
 import dayjs from "dayjs";
 
 export default function CurrentDetails() {
