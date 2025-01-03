@@ -1,5 +1,5 @@
 import WorkoutExerciseItem from "@/components/featured/logger/workout-exercise-item";
-import { Text, View } from "@/components/generic/themed-components";
+import { View } from "@/components/generic/themed-components";
 import {
   FlatList,
   StyleSheet,
@@ -11,6 +11,7 @@ import { Fragment } from "react";
 import { Stack } from "expo-router";
 import { Button } from "@/components/featured/button";
 import WorkoutHeader from "@/components/featured/logger/workout-header";
+import SelectExerciseModal from "@/components/featured/logger/select-exercise-modal";
 
 export default function Current() {
   const height = useHeaderHeight();
@@ -39,6 +40,13 @@ export default function Current() {
             data={[1, 2, 3, 4, 5]}
             renderItem={() => <WorkoutExerciseItem />}
             ListHeaderComponent={<WorkoutHeader />}
+            ListFooterComponent={
+              <SelectExerciseModal
+                onSelectedExercise={(name) =>
+                  console.log("selected exercise", name)
+                }
+              />
+            }
           />
         </View>
       </KeyboardAvoidingView>
